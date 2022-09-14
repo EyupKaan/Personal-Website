@@ -1,0 +1,57 @@
+<template>
+    <section class="text-gray-900 border-b pb-16 bg-gray-300">
+        <div
+            class=" container max-w-screen-lg min-h-screen mx-auto my-auto  md:items-start md:text-left items-center py-32 pb-12 flex flex-col px-5">
+            <h1 class="text-left text-3xl font-medium title-font text-gray-900">
+                Contact Me
+            </h1>
+            <span class="block mt-1 w-10 h-1 bg-green-700"></span>
+
+            <form class="w-full" action="https://formspree.io/f/moqbealr" method="POST">
+                <div class="flex flex-wrap -mx-4">
+                    <div class="w-full md:w-1/2 px-4 mb-5">
+                        <label for="fullName" class="block mb-2">
+                            Full Name
+                        </label>
+                        <input id="fullName" name="fullName" type="text" required="required" placeholder="Enter your full name"
+                            class="block w-full bg-gray-200 border" />
+                    </div>
+                    <div class="w-full md:w-1/2 px-4 mb-5">
+                        <label for="email" class="block mb-2 text-copy-primary">
+                            E-mail
+                        </label>
+                        <input id="email" name="email" type="email" placeholder="Enter your e-mail" required="required"
+                            class="block w-full bg-gray-200 border" />
+                    </div>
+                    <div class="w-full px-4 mb-5">
+                        <label for="message" class="block mb-2">
+                            Message
+                        </label>
+                        <textarea id="message" name="message" rows="6" type="text" placeholder="Enter your message..."
+                            required="required" class="block w-full bg-gray-200"></textarea>
+                    </div>
+                </div>
+                <div class="flex justify-end w-full">
+                    <button type="submit" class="inline-flex shadow text-white bg-green-700 border-0">
+
+                        Send
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section>
+</template>
+
+<script>
+
+
+export default {
+    data() {
+        return {
+            message: '',
+        }
+    }
+}
+</script>
+
+
