@@ -7,12 +7,15 @@
                 </h1>
                 <span class="mt-2 mb-4 w-10 h-1 bg-green-700"></span>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-                <div v-for="(tech, index) in techs" :key="index" class="flex items-center  hover:scale-110">
-                    <div class="flex items-center justify-center rounded-xl">
-                        <img class="h-12 w-12" :src="require(`@/public/techs-icons/${tech.icon}`)" :alt="tech.title" />
+            <div class="border outline outline-offset-2 outline-green-700 rounded-xl bg-gray-100 my-1 px-2 py-4">
+                <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+                    <div v-for="(tech, index) in techs" :key="index" class="flex items-center  hover:scale-110">
+                        <div class="flex items-center justify-center rounded-xl">
+                            <img class="h-12 w-12" :src="require(`@/public/techs-icons/${tech.icon}`)"
+                                :alt="tech.title" />
+                        </div>
+                        <div class="font-semibold mt-1">{{ tech.title }}</div>
                     </div>
-                    <div class="font-semibold mt-1">{{ tech.title }}</div>
                 </div>
             </div>
         </div>
@@ -72,7 +75,7 @@ export default {
                     title: 'Tailwind',
                     icon: 'tailwind.svg'
                 }
-                
+
             ]
         }
     }

@@ -16,14 +16,14 @@
                                 Full Name
                             </label>
                             <input id="fullName" name="fullName" type="text" required="required"
-                                placeholder="Enter your full name" class="block w-full bg-gray-200 border" />
+                                placeholder="Enter your full name" class="block w-full bg-gray-100 border rounded" />
                         </div>
                         <div class="w-full md:w-1/2 px-4 mb-5">
                             <label for="email" class="block mb-2 text-copy-primary">
                                 E-mail
                             </label>
                             <input id="email" name="email" type="email" placeholder="Enter your e-mail"
-                                required="required" class="block w-full bg-gray-200 border" />
+                                required="required" class="block w-full bg-gray-100 border rounded" />
                         </div>
                         <div class="w-full px-4 mb-5">
                             <label for="message" class="block mb-2">
@@ -31,12 +31,11 @@
                             </label>
                             <textarea id="message" name="message" rows="6" type="text"
                                 placeholder="Enter your message..." required="required"
-                                class="block w-full bg-gray-200"></textarea>
+                                class="block w-full bg-gray-100 border rounded-sm"></textarea>
                         </div>
                     </div>
                     <div class="flex justify-end w-full">
-                        <button type="submit" class="inline-flex shadow text-white bg-green-700 border-0">
-
+                        <button type="submit" class="inline-flex shadow bg-gray-200 text-green-700 w-12 min-h-fit rounded">
                             Send
                         </button>
                     </div>
